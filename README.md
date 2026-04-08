@@ -86,6 +86,8 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 | APC vs. Recipe | +18,066,205 kg | **+$1.81 billion** |
 | APC vs. Operator | +21,829,238 kg | **+$2.18 billion** |
 
+*Note: Economic estimates are illustrative, based on simplified assumptions. Real-world impact depends on facility scale, market pricing, and batch scheduling.*
+
 ---
 
 ## Tools & Libraries
