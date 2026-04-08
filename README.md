@@ -3,6 +3,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python) ![Dask](https://img.shields.io/badge/Dask-distributed-orange) ![SciPy](https://img.shields.io/badge/SciPy-statistical%20analysis-green) ![Tableau](https://img.shields.io/badge/Tableau-visualization-lightblue)
 
+📄 [View Full Presentation on Notion](https://hadiyati.notion.site/Comparative-Analysis-of-Bioprocess-Control-Strategies-28cfe43e244680868f68c375ade82365)
 ---
 
 ## 📌 Project Overview
