@@ -1,12 +1,11 @@
-# 🧫 Comparative Analysis of Bioprocess Control Strategies
+# Comparative Analysis of Bioprocess Control Strategies
 > A data-driven study of industrial-scale penicillin fermentation using the IndPenSim simulation dataset
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python) ![Dask](https://img.shields.io/badge/Dask-distributed-orange) ![SciPy](https://img.shields.io/badge/SciPy-statistical%20analysis-green) ![Tableau](https://img.shields.io/badge/Tableau-visualization-lightblue)
 
-📄 [View Full Presentation on Notion](https://hadiyati.notion.site/Comparative-Analysis-of-Bioprocess-Control-Strategies-28cfe43e244680868f68c375ade82365)
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project compares three industrial bioprocess control strategies applied to a 100,000-litre penicillin fermentation simulation. Using statistical analysis and data visualization, the study evaluates productivity, PAA (Phenylacetic Acid) control quality, and economic impact across control approaches.
 
@@ -16,7 +15,7 @@ This project compares three industrial bioprocess control strategies applied to 
 
 ---
 
-## 🗂️ Dataset
+## Dataset
 
 - **Source:** [IndPenSim — Industrial Penicillin Simulation](http://www.industrialpenicillinsimulation.com)
 - **Size:** ~2.5 GB | 100 batches | 113,935 rows | 2,239 columns
@@ -35,7 +34,7 @@ The dataset is **not included** in this repository due to its size. Please downl
 
 ---
 
-## ⚗️ Background
+## Background
 
 The fermentation reaction converts glucose, ammonia, and phenylacetic acid (PAA) into Penicillin G using the fungus *Penicillium chrysogenum*:
 
@@ -47,7 +46,7 @@ Key control parameters include: aeration rate, agitation, pH, temperature, feed 
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 ### Productivity (kg/h)
 
@@ -78,7 +77,7 @@ Key control parameters include: aeration rate, agitation, pH, temperature, feed 
 
 APC-Raman continuously modulates PAA flow using real-time spectroscopic feedback, compared to the rigid stepwise feeding (bang-bang control) used in the other strategies.
 
-### 💰 Estimated Economic Impact
+### Estimated Economic Impact
 
 Assuming penicillin price of $100/kg and 33.7 batches/year:
 
@@ -89,7 +88,7 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 
 ---
 
-## 🛠️ Tools & Libraries
+## Tools & Libraries
 
 | Tool | Purpose |
 |------|---------|
@@ -102,7 +101,7 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. **Download the dataset** from [IndPenSim](http://www.industrialpenicillinsimulation.com) and save to your Google Drive
 
@@ -118,7 +117,7 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 bioprocess-control-analysis/
@@ -129,7 +128,7 @@ bioprocess-control-analysis/
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```
 pandas
@@ -146,14 +145,14 @@ pip install pandas "dask[dataframe]" scipy numpy matplotlib
 
 ---
 
-## 📚 References
+## References
 
 - Goldrick S., Stefan A., Lovett D., Montague G., Lennox B. (2015). *The development of an industrial-scale fed-batch fermentation simulation.* Journal of Biotechnology, 193:70–82.
 
 - Goldrick S., Duran-Villalobos C., Jankauskas K., Lovett D., Farid S.S., Lennox B. (2019). *Modern day control challenges for industrial-scale fermentation processes.* Computers and Chemical Engineering.
 
-## 👤 Author
+## Author
    **Susila Hadiyati**  
    [LinkedIn](https://linkedin.com/in/susilahadiyati) | [GitHub](https://github.com/susihad)
-   
-Enjoy!
+
+📄 [View Full Presentation on Notion](https://hadiyati.notion.site/Comparative-Analysis-of-Bioprocess-Control-Strategies-28cfe43e244680868f68c375ade82365)
