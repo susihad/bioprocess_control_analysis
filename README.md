@@ -106,11 +106,11 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 1. **Download the dataset** from [IndPenSim](http://www.industrialpenicillinsimulation.com) and save to your Google Drive
 
 2. **Open the notebook** in Google Colab:  
-   [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
+   [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1iIIam78Uc7jGepcU0aga5QOKX10HntoT?usp=sharing)
 
 3. **Update the file path** in the notebook to match your Google Drive location:
    ```python
-   zip_path = '/content/drive/MyDrive/YOUR_FOLDER/100_Batches_IndPenSim.zip'
+   zip_path = '/content/drive/MyDrive/Bio Data/100_Batches_IndPenSim.zip'
    ```
 
 4. **Run all cells** sequentially
@@ -122,7 +122,7 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 ```
 bioprocess-control-analysis/
 ├── README.md
-├── bioprocess_analysis.ipynb    # Main analysis notebook
+├── penicillin_simulation_bioprocess_analysis.ipynb    # Main analysis notebook
 └── requirements.txt             # Python dependencies
 ```
 
@@ -150,3 +150,9 @@ pip install pandas "dask[dataframe]" scipy numpy matplotlib
 - Goldrick S., Stefan A., Lovett D., Montague G., Lennox B. (2015). *The development of an industrial-scale fed-batch fermentation simulation.* Journal of Biotechnology, 193:70–82.
 
 - Goldrick S., Duran-Villalobos C., Jankauskas K., Lovett D., Farid S.S., Lennox B. (2019). *Modern day control challenges for industrial-scale fermentation processes.* Computers and Chemical Engineering.
+
+## 👤 Author
+   **Susila Hadiyati**  
+   [LinkedIn](https://linkedin.com/in/susilahadiyati) | [GitHub](https://github.com/susihad)
+   
+Enjoy!
