@@ -122,8 +122,8 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 ```
 bioprocess-control-analysis/
 ├── README.md
-├── penicillin_simulation_bioprocess_analysis.ipynb    # Main analysis notebook
-└── requirements.txt             # Python dependencies
+├── penicillin_simulation_dataset_analysis.ipynb    # Main analysis notebook
+└── requirements.txt                                # Python dependencies
 ```
 
 ---
