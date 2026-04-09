@@ -11,13 +11,13 @@ This project compares three industrial bioprocess control strategies applied to 
 
 **Key Question:** Does Advanced Process Control (APC) with real-time Raman spectroscopy outperform traditional control methods in penicillin manufacturing?
 
-**Short Answer:** Yes — by 18–23%, with statistical significance of p < 0.005.
+**Short Answer:** Yes - by 18–23%, with statistical significance of p < 0.005.
 
 ---
 
 ## Dataset
 
-- **Source:** [IndPenSim — Industrial Penicillin Simulation](http://www.industrialpenicillinsimulation.com)
+- **Source:** [IndPenSim - Industrial Penicillin Simulation](http://www.industrialpenicillinsimulation.com)
 - **Size:** ~2.5 GB | 100 batches | 113,935 rows | 2,239 columns
 - **Format:** CSV (process parameters + Raman spectroscopy measurements)
 
