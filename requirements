@@ -3,3 +3,5 @@ dask[dataframe]
 scipy
 numpy
 matplotlib
+scikit-learn
+pyarrow
