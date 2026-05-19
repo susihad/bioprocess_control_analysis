@@ -88,6 +88,13 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 
 *Note: Economic estimates are illustrative, based on simplified assumptions. Real-world impact depends on facility scale, market pricing, and batch scheduling.*
 
+Raman Spectroscopy Soft Sensor (PLS Model)
+To complement the productivity and control quality analysis, a chemometric soft sensor was developed to predict real-time Penicillin concentration directly from Raman spectra, without relying on slow offline lab measurements.
+MethodPartial Least Squares (PLS) RegressionInput2,200 Raman wavenumbers (201–2400 cm⁻¹)TargetPenicillin concentration (g/L)Train setRecipe + Operator batches (1–60)Test setAPC batches (61–90)
+Results:
+SetR²RMSETrain (Recipe + Operator)0.999Test (APC, unseen)0.9990.38 g/L
+The model generalizes perfectly across control strategies. Fault batches show higher prediction scatter, suggesting the soft sensor can implicitly flag process anomalies without being trained on them.
+
 ---
 
 ## Tools & Libraries
@@ -100,6 +107,8 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 | `numpy` | Numerical computation |
 | `matplotlib` | Time series visualization |
 | `Tableau` | Exploratory data analysis & outlier detection |
+| `scikit-learn` | PCA, PLS regression, soft sensor |
+| `pyarrow` | Reading Parquet files |
 
 ---
 
@@ -138,6 +147,8 @@ dask[dataframe]
 scipy
 numpy
 matplotlib
+scikit-learn
+pyarrow
 ```
 
 Install with:
