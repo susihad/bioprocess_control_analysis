@@ -88,13 +88,40 @@ Assuming penicillin price of $100/kg and 33.7 batches/year:
 
 *Note: Economic estimates are illustrative, based on simplified assumptions. Real-world impact depends on facility scale, market pricing, and batch scheduling.*
 
-Raman Spectroscopy Soft Sensor (PLS Model)
-To complement the productivity and control quality analysis, a chemometric soft sensor was developed to predict real-time Penicillin concentration directly from Raman spectra, without relying on slow offline lab measurements.
-MethodPartial Least Squares (PLS) RegressionInput2,200 Raman wavenumbers (201–2400 cm⁻¹)TargetPenicillin concentration (g/L)Train setRecipe + Operator batches (1–60)Test setAPC batches (61–90)
-Results:
-SetR²RMSETrain (Recipe + Operator)0.999Test (APC, unseen)0.9990.38 g/L
-The model generalizes perfectly across control strategies. Fault batches show higher prediction scatter, suggesting the soft sensor can implicitly flag process anomalies without being trained on them.
+### Raman Spectroscopy Soft Sensor (PLS Model)
 
+To complement the productivity and control quality analysis, a chemometric soft sensor was developed 
+to predict real-time Penicillin concentration directly from Raman spectra, without relying on slow 
+offline lab measurements.
+
+**Model Setup**
+
+| Parameter | Details |
+|-----------|---------|
+| Method | Partial Least Squares (PLS) Regression |
+| Input | 2,200 Raman wavenumbers (201–2400 cm⁻¹) |
+| Target | Penicillin concentration (g/L) |
+| Train set | Recipe + Operator batches (1–60) |
+| Test set | APC batches (61–90), unseen during training |
+| Sample size | ~22,800 observations (20% subsample) |
+
+**Results**
+
+| Set | R² | RMSE |
+|-----|----|------|
+| Train (Recipe + Operator) | 0.999 | |
+| Test (APC, unseen) | 0.999 | 0.38 g/L |
+
+**Key Observations**
+- The model generalizes perfectly across control strategies, suggesting Raman spectra carry consistent 
+biochemical information regardless of how the process is controlled
+- Fault batches show higher prediction scatter despite not being included in training, suggesting the 
+soft sensor can implicitly flag process anomalies
+- PLS loadings are uniform across all wavenumbers, consistent with the simulated nature of IndPenSim 
+Raman data — real experimental data would show distinct chemical peaks
+
+> **Note:** Analysis was performed on a 20% subsample (~22,800 observations) due to computational 
+> constraints. Results are representative of the full dataset.
 ---
 
 ## Tools & Libraries
